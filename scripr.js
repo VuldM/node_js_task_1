@@ -22,8 +22,9 @@ const server = http.createServer((req, res) => {
     res.writeHead(404, {
       "Content-Type": "text/html; charset=UTF-8",
     });
-    res.end("<h1>Страница не найдена</h1>");
-    res.end('<a href="/">Переход на страницу "Главная"</a>');
+    res.end(
+      '<h1>Страница не найдена</h1><a href="/">Переход на страницу "Главная"</a>'
+    );
   }
 });
 const port = 3000;
